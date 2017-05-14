@@ -1,0 +1,28 @@
+[main] 16:32:02,650 INFO  [com.verity.utilities.WebAccelerator] Cycle Start Date inserted
+[pool-1-thread-1] 16:32:02,738 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Chrome
+[pool-1-thread-1] 16:32:33,383 INFO  [com.verity.utilities.WebAccelerator] Executed Before Class Method Successfully
+[pool-1-thread-1] 16:32:33,383 INFO  [com.verity.utilities.WebAccelerator] 
+Browser=chrome
+BrowserVersion=58.0.3029.110
+OS=Mac OS X
+OSVersion=10.10.5
+[pool-1-thread-1] 16:32:33,463 INFO  [com.verity.utilities.ReadPropertyFile] Value is:http://107.170.213.234/catalog/
+[pool-1-thread-1] 16:32:33,463 INFO  [com.verity.utilities.WebAccelerator] URL = http://107.170.213.234/catalog/
+[pool-1-thread-1] 16:32:36,231 INFO  [com.verity.utilities.WebAccelerator] URL navigating to =http://107.170.213.234/catalog/
+[pool-1-thread-1] 16:32:36,276 INFO  [com.verity.utilities.WebAccelerator] URL Navigation
+[pool-1-thread-1] 16:32:36,305 INFO  [com.verity.utilities.WebAccelerator] Test description: null
+[pool-1-thread-1] 16:32:36,306 INFO  [com.verity.utilities.WebAccelerator] getMethod name:SampleTest.testingGrid()[pri:0, instance:com.verity.sampletests.SampleTest@6e6c3152]
+[pool-1-thread-1] 16:32:36,306 INFO  [com.verity.utilities.WebAccelerator] getName name:testingGrid
+[pool-1-thread-1] 16:32:36,306 INFO  [com.verity.utilities.WebAccelerator] getTestClass name:[TestClass name=class com.verity.sampletests.SampleTest]
+[pool-1-thread-1] 16:32:36,306 INFO  [com.verity.utilities.WebAccelerator] getThrow name:null
+[pool-1-thread-1] 16:32:36,306 INFO  [com.verity.utilities.WebAccelerator] 
+[pool-1-thread-1] 16:32:36,306 INFO  [com.verity.utilities.ReadPropertyFile] Value is:No
+[pool-1-thread-1] 16:32:36,307 INFO  [com.verity.utilities.WebAccelerator] Start time: 05/14/2017 16:32:36
+[pool-1-thread-1] 16:32:36,307 INFO  [com.verity.utilities.WebAccelerator] Pass
+[pool-1-thread-1] 16:32:36,307 INFO  [com.verity.utilities.WebAccelerator] Results are not posted to DB because ResultsToDB=No. Please change to Yes for DB results
+[pool-1-thread-1] 16:32:36,382 INFO  [com.verity.utilities.WebAccelerator] Closing browser...
+[pool-1-thread-1] 16:32:37,002 INFO  [com.verity.utilities.WebAccelerator] Browser closed.
+[main] 16:32:37,475 INFO  [com.verity.utilities.WebAccelerator] Starting AfterSuite
+[main] 16:32:37,475 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Test class
+[main] 16:32:37,476 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Test 5/11/2017
+[main] 16:32:37,476 INFO  [com.verity.utilities.WebAccelerator] Cycle End Date inserted

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="R1.13_Regression" thread-count="1" verbose="1" allow-return-values="true" parallel="true" data-provider-thread-count="10" junit="false" configfailurepolicy="skip" skipfailedinvocationcounts="false">
+   <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="org.testng.reporters.FailedReporter"/>
+   </listeners>   
+  <parameter name="remoteBrowserType" value="Chrome"/>
+  <test name="Regression">
+   <sysproperty key="org.uncommons.reportng.escape-output" value="false"/>
+  <sysproperty key="org.uncommons.reportng.title" value="Test"/>
+	<classes>
+		<class name="com.verity.sampletests.SampleTest"/>
+		<class name="com.verity.utilities.WebAccelerator"/>
+	</classes>
+   </test> <!-- Test -->  
+</suite> <!-- regression -->
+
+
+
