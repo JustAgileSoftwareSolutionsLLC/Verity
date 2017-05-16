@@ -15,7 +15,7 @@ import org.apache.log4j.Logger;
 
 public class ReadPropertyFile {
 	public static String pValue;
-	public static String ConfigPathLocation="/Users/rameshtejavath/Documents/Selenium/JustAgile/VerityFramework/src/test/resources/Config.properties";
+	public static String ConfigPathLocation="./Config.properties";
 	public static Logger logger= Logger.getLogger(ReadPropertyFile.class);
 	public static String readFile(String File,String pName) {
 		try {
