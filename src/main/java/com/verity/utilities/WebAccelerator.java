@@ -7,7 +7,6 @@ package com.verity.utilities;
  * Description: This is a common methods used for Web  apps including Opening Browser, Quit
  *  **/
 
-
 import org.testng.ISuite;
 import org.testng.ISuiteResult;
 import org.testng.ITestResult;
@@ -45,6 +44,8 @@ public class WebAccelerator {
   	public  WebDriver driver;
   	public  Actions builder;
   	public  ReadPropertyFile ReadPropertyFile;
+  	private final String defaultBrowserType = "FIREFOX";
+
   	public  WebDriverWait wait;
 	public  ReportHandler log;
 	public  String OSName=System.getProperty("os.name");
@@ -63,11 +64,13 @@ public class WebAccelerator {
 	//@Parameters({"remoteBrowserType"})
 	//@BeforeClass(alwaysRun=true)
 	@SuppressWarnings("static-access")
-	public WebDriver openBrowser(String remoteBrowserType) throws Exception
+	public WebDriver openBrowser() throws Exception
 	{		
 		ReadPropertyFile =new ReadPropertyFile();
 		DesiredCapabilities Capabilities = new DesiredCapabilities();
 		String browser =ReadPropertyFile.getConfigPropertyVal("BrowserType");
+	  
+		logger.info("Browser = " + browser);
 		if(OSName.toLowerCase().contains("windows")){
 			File IEfile = new File(".\\drivers\\IEDriverServer.exe");
 			System.setProperty("webdriver.ie.driver", IEfile.getAbsolutePath());		
@@ -76,11 +79,11 @@ public class WebAccelerator {
 			
 			logger.info("Browser = " + browser);
 			
-			if (browser.equalsIgnoreCase("FireFox")) {
+			if (browser.equalsIgnoreCase("FIREFOX")) {
 	       	 driver = new FirefoxDriver();
 	       	// driver.manage().deleteAllCookies();
 			}
-			else if (browser.equalsIgnoreCase("Safari")) {
+			else if (browser.equalsIgnoreCase("SAFARI")) {
 				 //Assert.assertTrue(isSupportedPlatform());
 		       	 driver = new SafariDriver();
 		       	 //driver.manage().deleteAllCookies();
@@ -90,25 +93,26 @@ public class WebAccelerator {
 	      	    Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 	      	    driver = new InternetExplorerDriver(Capabilities);      	    
 			} 
-			else if(browser.equalsIgnoreCase("Chrome")) {
+			else if(browser.equalsIgnoreCase("CHROME")) {
 	       		Capabilities = DesiredCapabilities.chrome();
 	       		Capabilities.setCapability("chrome.switches", Arrays.asList("--start-maximized"));
 	       		driver = new ChromeDriver(Capabilities);       	
 			}
 			else if(browser.equalsIgnoreCase("Remote")) {
+				   final String remoteBrowserType = System.getProperty("browser").toUpperCase();
 				logger.info("Browser is=" + remoteBrowserType );
 				
-				if (remoteBrowserType.equalsIgnoreCase("FireFox"))
+				if (remoteBrowserType.equalsIgnoreCase("FIREFOX"))
 					driver= new RemoteWebDriver(DesiredCapabilities.firefox());			
 	          	else if(remoteBrowserType.equalsIgnoreCase("IE")){
 	          		Capabilities = DesiredCapabilities.internetExplorer();
 	          		Capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 	          		driver= new RemoteWebDriver(Capabilities);
 	          	}
-	         	else if(remoteBrowserType.equalsIgnoreCase("Chrome")) 
+	         	else if(remoteBrowserType.equalsIgnoreCase("CHROME")) 
 	      	    	driver= new RemoteWebDriver(DesiredCapabilities.chrome());
 				//driver = new Augmenter().augment(driver);  
-				else if(remoteBrowserType.equalsIgnoreCase("Safari")) 
+				else if(remoteBrowserType.equalsIgnoreCase("SAFARI")) 
 					//Assert.assertTrue(isSupportedPlatform());
 	      	    	driver= new RemoteWebDriver(DesiredCapabilities.safari());
 				driver = new Augmenter().augment(driver);  
@@ -168,7 +172,7 @@ public class WebAccelerator {
 	
 	}
 	
-	public void navigateToSite(String remoteBrowserType) throws Exception{
+	public void navigateToSite() throws Exception{
 		try {
 			navigateURL();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -178,7 +182,7 @@ public class WebAccelerator {
 /*		   if(driver != null) {
 			   driver.quit();
 	        }*/		
-		   openBrowser(remoteBrowserType);
+		   openBrowser();
 		   navigateURL();
 		   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   logger.info("URL Navigation");
@@ -226,7 +230,7 @@ public class WebAccelerator {
 /*		   if(driver != null) {
 			   driver.quit();
 	        }*/		
-		   openBrowser(remoteBrowserType);
+		   openBrowser();
 		   getPage(getURLfromConfig);	
 		   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		   logger.info("URL Navigation");

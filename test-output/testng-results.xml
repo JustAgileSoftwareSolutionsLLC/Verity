@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24381" started-at="2017-05-17T21:30:18Z" finished-at="2017-05-17T21:30:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24381" started-at="2017-05-17T21:30:18Z" finished-at="2017-05-17T21:30:42Z">
+      <class name="com.verity.sampletests.SampleTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.verity.sampletests.SampleTest@4157f54e]" name="setup" is-config="true" duration-ms="20319" started-at="2017-05-17T14:30:18Z" finished-at="2017-05-17T14:30:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="navigate()[pri:0, instance:com.verity.sampletests.SampleTest@4157f54e]" name="navigate" is-config="true" duration-ms="3125" started-at="2017-05-17T14:30:38Z" finished-at="2017-05-17T14:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method status="PASS" signature="testingGrid()[pri:0, instance:com.verity.sampletests.SampleTest@4157f54e]" name="testingGrid" duration-ms="5" started-at="2017-05-17T14:30:41Z" finished-at="2017-05-17T14:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingGrid -->
+        <test-method status="PASS" signature="after(org.testng.ITestResult)[pri:0, instance:com.verity.sampletests.SampleTest@4157f54e]" name="after" is-config="true" duration-ms="922" started-at="2017-05-17T14:30:41Z" finished-at="2017-05-17T14:30:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testingGrid status=SUCCESS method=SampleTest.testingGrid()[pri:0, instance:com.verity.sampletests.SampleTest@4157f54e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.verity.sampletests.SampleTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

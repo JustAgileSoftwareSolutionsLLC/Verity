@@ -26,3 +26,88 @@ OSVersion=10.10.5
 [main] 16:32:37,475 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Test class
 [main] 16:32:37,476 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Test 5/11/2017
 [main] 16:32:37,476 INFO  [com.verity.utilities.WebAccelerator] Cycle End Date inserted
+[main] 12:55:30,278 INFO  [com.verity.utilities.WebAccelerator] Cycle Start Date inserted
+[pool-1-thread-1] 12:55:30,299 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Chrome
+[pool-1-thread-1] 12:55:43,113 INFO  [com.verity.utilities.WebAccelerator] Executed Before Class Method Successfully
+[pool-1-thread-1] 12:55:43,113 INFO  [com.verity.utilities.WebAccelerator] 
+Browser=chrome
+BrowserVersion=58.0.3029.110
+OS=Mac OS X
+OSVersion=10.10.5
+[pool-1-thread-1] 12:55:43,120 INFO  [com.verity.utilities.ReadPropertyFile] Value is:http://107.170.213.234/catalog/
+[pool-1-thread-1] 12:55:43,120 INFO  [com.verity.utilities.WebAccelerator] URL = http://107.170.213.234/catalog/
+[pool-1-thread-1] 12:55:45,246 INFO  [com.verity.utilities.WebAccelerator] URL navigating to =http://107.170.213.234/catalog/
+[pool-1-thread-1] 12:55:45,300 INFO  [com.verity.utilities.WebAccelerator] URL Navigation
+[pool-1-thread-1] 12:55:45,306 INFO  [com.verity.utilities.WebAccelerator] Test description: null
+[pool-1-thread-1] 12:55:45,306 INFO  [com.verity.utilities.WebAccelerator] getMethod name:SampleTest.testingGrid()[pri:0, instance:com.verity.sampletests.SampleTest@6e6c3152]
+[pool-1-thread-1] 12:55:45,307 INFO  [com.verity.utilities.WebAccelerator] getName name:testingGrid
+[pool-1-thread-1] 12:55:45,307 INFO  [com.verity.utilities.WebAccelerator] getTestClass name:[TestClass name=class com.verity.sampletests.SampleTest]
+[pool-1-thread-1] 12:55:45,307 INFO  [com.verity.utilities.WebAccelerator] getThrow name:null
+[pool-1-thread-1] 12:55:45,307 INFO  [com.verity.utilities.WebAccelerator] 
+[pool-1-thread-1] 12:55:45,307 INFO  [com.verity.utilities.ReadPropertyFile] Value is:No
+[pool-1-thread-1] 12:55:45,308 INFO  [com.verity.utilities.WebAccelerator] Start time: 05/17/2017 12:55:45
+[pool-1-thread-1] 12:55:45,308 INFO  [com.verity.utilities.WebAccelerator] Pass
+[pool-1-thread-1] 12:55:45,308 INFO  [com.verity.utilities.WebAccelerator] Results are not posted to DB because ResultsToDB=No. Please change to Yes for DB results
+[pool-1-thread-1] 12:55:45,736 INFO  [com.verity.utilities.WebAccelerator] Closing browser...
+[pool-1-thread-1] 12:55:46,219 INFO  [com.verity.utilities.WebAccelerator] Browser closed.
+[main] 12:55:46,233 INFO  [com.verity.utilities.WebAccelerator] Starting AfterSuite
+[main] 12:55:46,233 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Test class
+[main] 12:55:46,233 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Test 5/11/2017
+[main] 12:55:46,233 INFO  [com.verity.utilities.WebAccelerator] Cycle End Date inserted
+[main] 14:29:21,871 INFO  [com.verity.utilities.WebAccelerator] Browser = null
+[main] 14:29:21,901 INFO  [com.verity.utilities.WebAccelerator] Test description: null
+[main] 14:29:21,901 INFO  [com.verity.utilities.WebAccelerator] getMethod name:SampleTest.testingGrid()[pri:0, instance:com.verity.sampletests.SampleTest@4157f54e]
+[main] 14:29:21,901 INFO  [com.verity.utilities.WebAccelerator] getName name:testingGrid
+[main] 14:29:21,902 INFO  [com.verity.utilities.WebAccelerator] getTestClass name:[TestClass name=class com.verity.sampletests.SampleTest]
+[main] 14:29:21,902 INFO  [com.verity.utilities.WebAccelerator] getThrow name:null
+[main] 14:29:21,902 INFO  [com.verity.utilities.WebAccelerator] 
+[main] 14:29:21,905 INFO  [com.verity.utilities.WebAccelerator] Start time: 05/17/2017 14:29:21
+[main] 14:29:21,905 INFO  [com.verity.utilities.WebAccelerator] Skipped
+[main] 14:30:18,571 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Chrome
+[main] 14:30:18,572 INFO  [com.verity.utilities.WebAccelerator] Browser = Chrome
+[main] 14:30:38,799 INFO  [com.verity.utilities.WebAccelerator] Executed Before Class Method Successfully
+[main] 14:30:38,805 INFO  [com.verity.utilities.WebAccelerator] 
+Browser=chrome
+BrowserVersion=58.0.3029.110
+OS=Mac OS X
+OSVersion=10.10.5
+[main] 14:30:38,830 INFO  [com.verity.utilities.ReadPropertyFile] Value is:http://107.170.213.234/catalog/
+[main] 14:30:38,830 INFO  [com.verity.utilities.WebAccelerator] URL = http://107.170.213.234/catalog/
+[main] 14:30:41,876 INFO  [com.verity.utilities.WebAccelerator] URL navigating to =http://107.170.213.234/catalog/
+[main] 14:30:41,943 INFO  [com.verity.utilities.WebAccelerator] URL Navigation
+[main] 14:30:41,949 INFO  [com.verity.utilities.WebAccelerator] Test description: null
+[main] 14:30:41,949 INFO  [com.verity.utilities.WebAccelerator] getMethod name:SampleTest.testingGrid()[pri:0, instance:com.verity.sampletests.SampleTest@4157f54e]
+[main] 14:30:41,949 INFO  [com.verity.utilities.WebAccelerator] getName name:testingGrid
+[main] 14:30:41,949 INFO  [com.verity.utilities.WebAccelerator] getTestClass name:[TestClass name=class com.verity.sampletests.SampleTest]
+[main] 14:30:41,949 INFO  [com.verity.utilities.WebAccelerator] getThrow name:null
+[main] 14:30:41,950 INFO  [com.verity.utilities.WebAccelerator] 
+[main] 14:30:41,950 INFO  [com.verity.utilities.ReadPropertyFile] Value is:No
+[main] 14:30:41,950 INFO  [com.verity.utilities.WebAccelerator] Start time: 05/17/2017 14:30:41
+[main] 14:30:41,951 INFO  [com.verity.utilities.WebAccelerator] Pass
+[main] 14:30:41,951 INFO  [com.verity.utilities.WebAccelerator] Results are not posted to DB because ResultsToDB=No. Please change to Yes for DB results
+[main] 14:30:42,288 INFO  [com.verity.utilities.WebAccelerator] Closing browser...
+[main] 14:30:42,870 INFO  [com.verity.utilities.WebAccelerator] Browser closed.
+[main] 14:32:47,784 INFO  [com.verity.utilities.ReadPropertyFile] Value is:Chrome
+[main] 14:32:47,802 INFO  [com.verity.utilities.WebAccelerator] Browser = Chrome
+[main] 14:33:14,457 INFO  [com.verity.utilities.WebAccelerator] Executed Before Class Method Successfully
+[main] 14:33:14,482 INFO  [com.verity.utilities.WebAccelerator] 
+Browser=chrome
+BrowserVersion=58.0.3029.110
+OS=Mac OS X
+OSVersion=10.10.5
+[main] 14:33:14,507 INFO  [com.verity.utilities.ReadPropertyFile] Value is:http://107.170.213.234/catalog/
+[main] 14:33:14,508 INFO  [com.verity.utilities.WebAccelerator] URL = http://107.170.213.234/catalog/
+[main] 14:33:18,001 INFO  [com.verity.utilities.WebAccelerator] URL navigating to =http://107.170.213.234/catalog/
+[main] 14:33:18,035 INFO  [com.verity.utilities.WebAccelerator] URL Navigation
+[main] 14:33:18,043 INFO  [com.verity.utilities.WebAccelerator] Test description: null
+[main] 14:33:18,044 INFO  [com.verity.utilities.WebAccelerator] getMethod name:SampleTest.testingGrid()[pri:0, instance:com.verity.sampletests.SampleTest@2ef5e5e3]
+[main] 14:33:18,044 INFO  [com.verity.utilities.WebAccelerator] getName name:testingGrid
+[main] 14:33:18,044 INFO  [com.verity.utilities.WebAccelerator] getTestClass name:[TestClass name=class com.verity.sampletests.SampleTest]
+[main] 14:33:18,044 INFO  [com.verity.utilities.WebAccelerator] getThrow name:null
+[main] 14:33:18,044 INFO  [com.verity.utilities.WebAccelerator] 
+[main] 14:33:18,045 INFO  [com.verity.utilities.ReadPropertyFile] Value is:No
+[main] 14:33:18,046 INFO  [com.verity.utilities.WebAccelerator] Start time: 05/17/2017 14:33:18
+[main] 14:33:18,047 INFO  [com.verity.utilities.WebAccelerator] Pass
+[main] 14:33:18,047 INFO  [com.verity.utilities.WebAccelerator] Results are not posted to DB because ResultsToDB=No. Please change to Yes for DB results
+[main] 14:33:18,260 INFO  [com.verity.utilities.WebAccelerator] Closing browser...
+[main] 14:33:18,773 INFO  [com.verity.utilities.WebAccelerator] Browser closed.

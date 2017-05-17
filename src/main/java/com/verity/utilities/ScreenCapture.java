@@ -8,13 +8,8 @@
 package com.verity.utilities;
 
 
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
+
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -30,8 +25,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestNGMethod;
 import org.testng.Reporter;
 import org.apache.log4j.Logger;
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGImageEncoder;
+
 
 
 
@@ -53,48 +47,7 @@ public class ScreenCapture {
 		this.driver = driver;
 	}
 	
-	public void CaptureScreen (String sFileName) throws Exception
-	{
-		BufferedImage PrtScn = null;
-		Dimension ScreenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		Robot robot = new Robot();
-		
-		// captures whole screen
-		Rectangle rect = new Rectangle(0,0, ScreenSize.width, ScreenSize.height);
-		PrtScn = robot.createScreenCapture(rect);
-		
-		
-		FileOutputStream out = new FileOutputStream(sFileName);
-		JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(out);
-		encoder.encode(PrtScn);
-		out.flush();
-		out.close();
-		
-		// or
-		//File myScreenshot = new File(sFileName);
-	    //ImageIO.write(PrtScn, "jpeg", myScreenshot);
-		
-	}
-	
-	/* uses webdriver methods..
-	// Captures only Browser Child..no addressbar or window title..	
-	public void CaptureScreen_WD (String sFileName)
-	{
-		WebDriver augmentedDriver = new Augmenter().augment(driver);
-		try {
-	//	String browser =ReadPropertyFile.getConfigPropertyVal("BrowserType");
-	//	driver=new Augmenter().augment(driver);
-	//	WebDriver augmentedDriver = new Augmenter().augment(AutomationCommon.driver);
-       // File screenshot = ((TakesScreenshot)augmentedDriver).getScreenshotAs(OutputType.FILE);
-		File screenshot = ((TakesScreenshot) augmentedDriver).getScreenshotAs(OutputType.FILE);
-        
-			org.apache.commons.io.FileUtils.copyFile(screenshot, new File(sFileName));
-			//Reporter.log("<a href=" + path + " target='_blank' >" + this.getFileName(nameScreenshot) + "</a>");
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-		}	
-	}*/
+
         public String  takeScreenShoot(ITestNGMethod testMethod) throws Exception {
         	String browser =ReadPropertyFile.getConfigPropertyVal("BrowserType");
         	File screenshot;
