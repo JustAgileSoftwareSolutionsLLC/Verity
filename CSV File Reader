@@ -1,0 +1,39 @@
+package Excel.Reader.File;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class CSV {
+	//Delimiters used in the CSV file
+		private static final String COMMA_DELIMITER = ",";
+	
+			 public void readCSVFull(String path){
+				 Scanner scanner = null;
+					try {
+						//Get the scanner instance
+						scanner = new Scanner(new File(path));
+						//Use Delimiter as COMMA
+						scanner.useDelimiter(COMMA_DELIMITER);
+						while(scanner.hasNext())
+						{
+								System.out.print(scanner.next()+"   ");
+						}
+					} 
+					catch (FileNotFoundException fe) 
+					{
+						fe.printStackTrace();
+					}
+					finally
+					{
+						scanner.close();
+			 }
+			}
+		
+public static void main(String args[])throws IOException
+
+{
+	CSV csv = new CSV();
+	csv.readCSVFull("C:\\Users\\Neelam\\Desktop\\excel_files\\Class.csv");
+}}
