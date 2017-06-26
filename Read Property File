@@ -1,0 +1,41 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class ReadPropertyFile {
+	
+		public static String pValue;
+		public static String readFile(String propertypath,String pName) {
+			try {
+				Properties pro = new Properties();
+				FileInputStream in = new FileInputStream(propertypath);
+				pro.load(in);
+				 pValue = pro.getProperty(pName);
+				 return pValue;
+			
+			} catch (IOException e) {
+				System.out.println("Error is:" + e.getMessage());
+				e.printStackTrace();
+			}
+			return pValue;
+		}
+		
+		 public static String getConfigPropertyVal(String Filepath, String key) {
+			    String ConfigPropertyVal = readFile(Filepath,key);
+				return ConfigPropertyVal != null ? ConfigPropertyVal.trim() : ConfigPropertyVal;
+			}
+	
+
+	public static void main(String[] args) {
+		ReadPropertyFile property = new ReadPropertyFile();
+		
+		//Calling Method and printing the output.
+		//testconfig.properties and config.properties are the property files in the working project.
+		
+	System.out.println(property.getConfigPropertyVal("testconfig.properties", "Name"));
+	System.out.println(property.getConfigPropertyVal("config.properties", "Name"));
+		
+		System.out.println("execution done");
+	}
+
+}
